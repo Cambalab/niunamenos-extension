@@ -16,7 +16,7 @@ for (var i = 0; i < elements.length; i++) {
             var text = node.nodeValue;
 
             var replacedText = text.replace(/todos|los|chicos/gi, function(matched){
-              return mapObj[matched];
+              return mapObj[matched.toLowerCase()];
             });
 
             if (replacedText !== text) {
